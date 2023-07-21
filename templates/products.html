@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Witty Wombats - StockNet</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+    
+
+<!-- Left-Aligned Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="products.html">Visualization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="store.html">Models</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+    <!-- Header -->
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Witty Wombats</span>
+      <span class="site-heading-lower">StockNet</span>
+    </h1>
+
+    <!-- Git for images : https://github.com/Shaif95/AICamp_DS/tree/main/Plots -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Line Charts of Apple and Walmart Stock Open Prices</h5>
+            <div class="shared-horizontal">
+             <iframe src="static/assets/img/line_plot.html" width="500" height="400"></iframe>
+
+            <iframe src="static/assets/img/line_plot_wmt.html" width="500" height="400"></iframe>
+            </div>
+            
+            <p class="text-muted text-center">Left: Apple; Right: Walmart</p>
+            <p class="card-text">Historical open prices from the respective companies were plotted on a graph yielding these line charts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patrick Candle Stick charts -->
+      <div class ="container">
+        <div class ="card">
+          <div class="card-body">
+            <h5 class ="card-title">Candlestick Charts</h5>
+            <p class="card-text">These charts depict the price movements of a stock on a particular day. They help us understand the overall price trend of a stock.</p>
+              <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/AAPL/download%20(1).png"alt="Apple stock candlestick chart" style="height: 60%; width:48%;" >
+              <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/WMT/download%20(4).png"alt = "Walmart stock candlestick chart" style="height: 60%; width:48%;">
+            <p class="text-muted text-center">Left: AAPL; Right: WMT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ryan Trading Volume Bar charts -->
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Volume Bar Charts - Walmart & Apple</h5>
+            <p class="card-text">On the left here we have a chart for walmart trading volume and on the right we have the same chart for apple.</p>
+            <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/WMT/download%20(1).png" alt="Walmart trading volume bar chart." style="height:87%;width:49%;">
+            <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/AAPL/download%20(2).png?raw=true" alt="Apple trading volume bar chart." style="height:87%;width:49%;">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Adam Pie Chart -->
+      <div class = "container">
+        <div class = "card">
+          <div class = "card-body">
+            <h5 class = "card-title">Stock Up/Down Pie Chart</h5>
+            <p class = "card-text"> Below are pie charts comparing the days that Walmart and Apple stock were classified as "Up" vs. the days that Walmart and Apple stock were classified as "Down".</p>
+            <img src = "https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/WMT/download%20(2).png" alt = "Walmart stock Up/Down pie chart" style="height:49%;width:49%;">
+            <img src = "https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/AAPL/download%20(3).png" alt = "Apple stock Up/Down pie chart" style="height:49%;width:49%;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Patrick Viz Gradio : https://huggingface.co/spaces/chowdhuryshaif/GradioViz Use iframe -->
+      <div class ="container">
+        <div class ="card">
+          <div class="card-body">
+            <h5 class ="card-title">Gradio Visual</h5>
+              <iframe src="https://chowdhuryshaif-gradioviz.hf.space/"style="width: 100%; height: 800px; border: none;"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Adam Trading Markers description -->
+      <div class = "container">
+        <div class = "card">
+          <div class = "card-body">
+            <h5 class = "card-title">Trading Markers</h5>
+            <p>Trading markers can be used to show if a stock has more than a certain percentage of change in a single day. These markers can be used by traders as thresholds for potential entry or exit. One of our goals with our models is to classify days as "Yes" or "No" for trading markers. In the graph below, trading markers are represented by "X"s.</p>
+            <img src = "https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Adam/WMT_Markers.png" alt = "Graph showing trading markers for Walmart stock" style="height:70%;width:85%;" class="centre">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container"><p class="m-0 small">Copyright &copy; Witty Wombats - StockNet 2023</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

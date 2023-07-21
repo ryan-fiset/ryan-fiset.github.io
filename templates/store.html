@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Witty Wombats - StockNet</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+    
+   <!-- Left-Aligned Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="products.html">Visualization</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="store.html">Models</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+    <!-- Header -->
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Witty Wombats</span>
+      <span class="site-heading-lower">StockNet</span>
+    </h1>
+
+
+    
+    <section class="page-section">
+      <div class="container">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h1 class="section-heading">Models</h3>
+      </div>
+      <!-- XGBoost -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"">XGBoost - eXtreme Gradient Boosting</h5>
+          <div class="shared-horizontal">
+          <p class="card-text"">XGB is one of the most popular and widely used machine learning algorithms due to its ability to handle large datasets and its ability to achieve state-of-the-art performance in many machine learning tasks such as classification and regression. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. This algorithm goes by lots of different names such as gradient boosting, multiple additive regression trees, stochastic gradient boosting or gradient boosting machines.</p>
+          <img src="https://miro.medium.com/max/1280/1*PZd-TOxSLV_--3glkFHwxQ.png" alt="Diagram showing the basics of XGBoost" style="height:50%;width:50%;">
+          <p class="card-text skim slim">XGB combines many weak prediction models, usually decision trees, to create a more accurate predictor. It uses the gradient descent method to minimize the prediction error of each new model based on the previous ones. It combines several weak learners into strong learners.</p>
+          </div>
+          <div>
+            <h5 class="card-title">XGBoost Results on SNP & Apple Stock Data</h5>
+            <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Elhanan/SNP.png?raw=true" alt="Graph of SNP stock data and trading markers" class="trading-mark-graph centre">
+            <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Ryan/aapl.png?raw=true" alt="Graph of Apple stock data and trading markers" class="trading-mark-graph centre" >
+            <p class="card-text">Trading markers were computed for historical SNP and Apple stock data and plotted on a graph. Trading markers indicate on which days the stock price changed by a certain amount. The threshold set for marking a day as a trading marker on the graph was set to 0.2, meaning a 20% change from previous day.</p>
+          </div>
+          <div class="shared-horizontal">
+          <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Elhanan/XG_Boost.png?raw=true" alt="Results of XGBoost trained and evaluated on SNP stock data" class="confusion-matrix">
+          <img src="https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Ryan/XGB.png?raw=true" alt="Results of XGBoost trained and evaluated on Apple stock data" class="confusion-matrix">
+          </div>
+          <div>
+            <p class="card-text">An XGBoost Classifier model was trained on the trading markers of SNP and Apple historical stock data, resulting in 99.60%(SNP) - 100%(APPL) accuracy when predicting a test dataset.</p>
+          </div>
+          <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html" class="btn btn-primary" role="button">Gradient Boosting on SKLearn</a>
+        </div>
+      </div>
+      <!-- SVR -->
+      <div class = "card">
+        <div class="card-body">
+          <h5 class="card-title">SVR</h5>
+          <p class="card-text">SVR (Support Vector Regression) models combine the basics of linear regression with SVM by finding a hyperplane that fits the data points in continuous space. This allows SVRs to predict continuous outputs. SVRs are also able to make predictions from non-linear data by using kernels.</p>
+          <!-- <img src = "https://cdn.educba.com/academy/wp-content/uploads/2020/01/SVR-chart.png" alt = "SVR hyperplane and boundary lines around data" style="height:40%;width:40%;"> -->
+          <img src = "https://www.researchgate.net/publication/304611323/figure/fig8/AS:668377215406089@1536364954428/Classification-of-data-by-support-vector-machine-SVM.png" alt = "SVR hyperplane and boundary lines around data" style="height:40%;width:40%;" class="centre">
+          <br>
+          <p class="card-text">Below is a graph showing the opening price for Walmart stock followed by a graph showing the SVR model's predictions of open prices compared to the actual opening prices for Walmart stock.</p>
+  <div class="shared-horizontal">
+          <img src = "https://github.com/Shaif95/AICamp_DS/blob/main/Plots/WMT/download.png?raw=true" alt = "Opening stock prices for Walmart stock" style="height:40%;width:40%;">
+          <img src = "https://github.com/Shaif95/AICamp_DS/blob/main/Plots/Adam/download.png?raw=true" alt = "SVR Linear Regression predictions vs. Actual values" style="height:40%;width:40%;">
+  </div>
+          <p class="card-text">Here we can see the results of running SVR on a testing set of data. As you can see in the plot, many of the model's predictions are close to the actual values from the testing data and there is a low MSE (mean squared error) which shows high accuracy.</p>
+          <a href = "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html" class = "btn btn-primary" role = "button">SVRs on SKLearn</a>
+        </div>
+      </div>
+      
+      <div class = "card" >                              
+        <div class ="card-body">
+          <h5 class = "card-title"> Decision Tree </h5>
+          <p class="card-text">Easy to understand and interpret, decision trees are structured just like what they're named after - a tree. These structures house internal nodes that represent an attribute, and each branch off of those represents a decision based on that attribute. The branches then lead to independent leaf nodes which represent a class label or numerical value. The only downside is that it is still subject to overfitting if not properly controlled, leading to poor generalization on unseen data.</p>
+          <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png" alt="Decision tree visualization" style="height:30%;width:50%;" class="centre">
+          <h5 class = "card-title"> Data Representation </h5>
+          <p class="card-text">Below is a plot of Google's stock with trading markers. A decision tree was used for the classification of these markers. The accuracy data of the model is shown below the graph.</p>
+          <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Patrick/Goog.png" alt = "Plot of trading marker on Google stock using decision tree" style="height:50%;width:75%;" class="centre">
+          <h5 class = "card-title"> Model Accuracy </h5>
+          <img src="https://raw.githubusercontent.com/Shaif95/AICamp_DS/main/Plots/Patrick/DecTree.png" alt = "Confusion matrix of a decision tree" class="confusion-matrix centre">
+          <p class="card-text">From the confusion matrix above, you can see there are zero false positives and negatives, so the decision tree was fully accurate here</p>
+          <a href="https://scikit-learn.org/stable/modules/tree.html#decision-trees" class="btn btn-primary" role="button">Decision trees on SKLearn</a>
+        </div>
+      </div>
+      </div>
+    </section>
+<div class="container">
+    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+    <h1 class="section-heading">Model Showcases</h3>
+    </div>
+
+    <div class="row">
+      <div class="card skim float-left">
+        <div class="card-body">
+          <h5 class="card-title text-center">Gradio Regression</h5>
+          <iframe src="https://elhanan-space.hf.space/" style="width: 100%; height: 800px; border: none;"></iframe>
+        </div>
+      </div>
+
+
+
+
+    <!-- Ryan gradio : https://huggingface.co/spaces/ryan-fiset/stocknet-viz -->
+      <div class ="card skim float-right">
+        <div class="card-body">
+          <h5 class ="card-title text-center">Gradio Classification</h5>
+            <iframe src="https://ryan-fiset-stocknet-viz.hf.space" style="width: 100%; height: 800px; border: none;"></iframe>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+     <div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Conclusion</h5>
+        <p class="card-text">Our study shows that the visualisations like the price chart and trading markers can give a lot of insights on the stock.</p>
+        <p class="card-text">Training models for individual stocks have much better accuracy than training a general model for stock price prediction.</p>
+        <p class="card-text">Prediction of trading markers has a lower error rate and can be more useful to build a trading strategy.</p>
+      </div>
+    </div>
+  </div>
+    
+    
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container"><p class="m-0 small">Copyright &copy; Witty Wombats - StockNet 2023</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
